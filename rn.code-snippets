@@ -1,0 +1,32 @@
+{
+	"React Native component": {
+		"prefix": "rnfc",
+		"body": [
+			"import React from 'react';",
+			"",
+			"import {",
+			"	Container,",
+			"} from './styles';",
+			"",
+			"export function ${TM_DIRECTORY/.*[\\\\|\\/]+(.*)/$1/}(){",
+			"	return (",
+			"		<Container>",
+			"",
+			"		</Container>",
+			"	);",
+			"}",
+		],
+		"description": "basic react native component with styledcomponents"
+	},
+	"React Native styles component": {
+		"prefix": "rns",
+		"body": [
+			"import styled from 'styled-components/native';",
+			"",
+			"export const Container = styled.View`",
+			"	flex: 1;",
+			"`;",
+		],
+		"description": "basic react native style component with styledcomponents"
+	},
+}
